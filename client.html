@@ -38,7 +38,7 @@
 		<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./css/my.css">	
     </head>
-	<body class="manage pro ">
+	<body class="manage pro client">
 		<div class="loader-wrapper">
 			<img class="loader" src="./images/logo.gif" alt="">
 			<span class="loader"><span class="loader-inner"></span></span>
@@ -618,16 +618,45 @@
 		</header>
 
 		<main class="iner">
-			<div class="container mt-5 pt-5">
-				<div class="select " style="direction: rtl;">
-					<span id="pp-filter" class=" fas fa-filter"></span>
-					<span id="pp-top-0" class="btn2">المنتجات</span>
-					<span id="pp-top-1" class="btn2">الأقسام</span>
-					<span id="pp-top-2" class="btn2">العلامات التجارية</span>
+			<div class="sec5">
+				<div class="container">
+					<div class="t-sec5 sec5-move">
+						<a style="margin-left: 5px;" class="btn1 " href="#">اضف تصنيف جديد للعملاء <strong> +</strong></a>
+						<a style="margin-left: 5px;" class="btn1 " href="#">اضف عميل جديد <strong> +</strong></a>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4 col-lg-3 sec5-move">
+							<div class="item">
+								<h5>جميع العملاء</h5>
+								<strong>5200</strong>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 sec5-move">
+							<div class="item">
+								<i class="fas fa-question"></i>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 sec5-move">
+							<div class="item">
+								<i class="fas fa-question"></i>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 col-lg-3 sec5-move">
+							<div class="item">
+								<i class="fas fa-question"></i>
+							</div>
+						</div>
+					</div>
+					<div class="select sec5-move" style="direction: rtl;">
+						<span id="c-pp-filter" class=" fas fa-filter"></span>
+						<span id="c-pp-top-0" class="btn2">العملاء</span>
+						<span id="c-pp-top-1" class="btn2">التقييمات</span>
+					</div>
 				</div>
 			</div>
+			
 			<div class="hawy">
-				<div class="filter-con">
+				<div class="c-filter-con">
 					<div class="filter-pp0">
 						<div>
 							<div class="text-right">
@@ -792,41 +821,35 @@
 						</div>
 					</div>
 				</div>
-				<div class="p-p-s-con">
-					<div class="sec2 pp0">
+				<div class="c-p-p-s-con">
+					<div class="sec2 c-pp0">
 						<div class="container">
 							<div class="t-sec2 sec2-move">
-								<h5 class="">المنتجات</h5>
+								<h5 class="">العملاء</h5>
 								<div class="sear">
 									<i class="ti-search"></i>
-									<input type="search" placeholder="اسم المنتج - وصف المنتج">
+									<input type="search" placeholder="اسم العميل - رقم جوال العميل">
 									<!-- <input type="search" placeholder="وصف المنتج"> -->
-								</div>
-								<div>
-									<a class="btn1 pp" href="./proNew.html">إضافة منتج جديد <strong> +</strong></a>
 								</div>
 								<!-- <a style=" height: 26px; line-height: 16px;" class="btn1">إضافة منتجات جديد+</span> -->
 								<div class="set-sec2 khia">
+									<span class="btn2 ">حذف<i class="ti-trash"></i></span>
 									<span class="btn2 "><small>استيراد من إكسل</small> استيراد <i class="ti-arrow-down"></i></span>
 									<span class="btn2 "><small>تصدير إلى إكسل</small> تصدير <i class="ti-arrow-up"></i></span>
-									<span class="btn2 ">حذف <i class="ti-trash"></i></span>
-									<span id="ta51" class="btn2 ">تعديل أكثر من منتج <i class="ti-tag"></i></span>
+									<span class="btn2 ">اضف إلى تصنيف<i class="ti-agenda"></i></span>
+									<span id="ta51" class="btn2 ">تواصل مع عدة عملاء <i class="ti-tag"></i></span>
 								</div>
 							</div>
 							<div class="talab head sec2-move">
 								<div class="img">
 									<input type="checkbox" value="1" id="ch01" name="check" >
 								</div>
-								<div class="img">
-									
-									<!-- <img src="https://picsum.photos/id/0/200/300" alt=""> -->
-								</div>
 								<div class="infor">
-									<span>اسم المنتج</span>
-									<span>القسم</span>
-									<span class="m-tog">المخزون</span>
+									<span>اسم العميل</span>
+									<span>رقم الجوال</span>
+									<span class="m-tog">البريد الإلكتروني</span>
 									<span class="m-tog">الحالة</span>
-									<span class="m-tog">التقييم</span>
+									<span class="m-tog">عدد الطلبات</span>
 									<span></span>
 								</div>
 							</div>
@@ -834,48 +857,28 @@
 								<div class="img">
 									<input type="checkbox" value="1" id="" name="check" >
 								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
 								<div class="infor">
 									<span>
-										<a href="#">حاسوب محمول</a>
-										<small><i class=""></i>3500 ريال</small>
+										<a href="#">محمد الفايز</a>
+										<small><i class="ti-location-pin"></i>أبها</small>
 									</span>
 									<span class="m-tog">
-										<a href="#">الأجهزة الإلكترونية</a>
+										<a href="#">0545891254</a>
+										<small class="mo-state">السعودية</small>
 									</span>
-									<span >15</span>
-									<span class="tog-btn tb0">
-										<small class="mo-state">متوفر</small>
+									<span >example@...</span>
+									<span class="tog-btn tb1">
+										<small class="mo-state">مفعل</small>
 									</span>
-									<div class="taqeem">
-										<span class="m-tog star rang">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-										</span>
-										<span class="m-tog star val">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											
-											<i class="fas fa-star-half"></i>
-										</span>
-									</div>
+									<span>15</span>
 									<div class="select "  ">
 										<div class="set set1">
 											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
 												<span class="btn2 " >إجراءات</span>
 												<div class="sub-m sub-m-2">
 													<ul>
-														<li><a class="pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp0-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp0-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp0-tc3" href="#"><i class="ti-slice"></i>تطبيق ضريبة محددة</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل بيانات العميل</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="fas fa-phone"></i>تواصل مع العميل</a></li>
 													</ul>
 												</div>
 											</div>
@@ -887,48 +890,28 @@
 								<div class="img">
 									<input type="checkbox" value="1" id="" name="check" >
 								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
 								<div class="infor">
 									<span>
-										<a href="#">حاسوب محمول</a>
-										<small><i class=""></i>3500 ريال</small>
+										<a href="#">محمد الفايز</a>
+										<small><i class="ti-location-pin"></i>أبها</small>
 									</span>
 									<span class="m-tog">
-										<a href="#">الأجهزة الإلكترونية</a>
+										<a href="#">0545891254</a>
+										<small class="mo-state">السعودية</small>
 									</span>
-									<span >15</span>
-									<span class="tog-btn tb0">
-										<small class="mo-state">متوفر</small>
+									<span >example@...</span>
+									<span class="tog-btn tb1">
+										<small class="mo-state">مفعل</small>
 									</span>
-									<div class="taqeem">
-										<span class="m-tog star rang">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-										</span>
-										<span class="m-tog star val">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											
-											<i class="fas fa-star-half"></i>
-										</span>
-									</div>
+									<span>15</span>
 									<div class="select "  ">
 										<div class="set set1">
 											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
 												<span class="btn2 " >إجراءات</span>
 												<div class="sub-m sub-m-2">
 													<ul>
-														<li><a class="pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp0-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp0-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp0-tc3" href="#"><i class="ti-slice"></i>تطبيق ضريبة محددة</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل بيانات العميل</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="fas fa-phone"></i>تواصل مع العميل</a></li>
 													</ul>
 												</div>
 											</div>
@@ -940,48 +923,28 @@
 								<div class="img">
 									<input type="checkbox" value="1" id="" name="check" >
 								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
 								<div class="infor">
 									<span>
-										<a href="#">حاسوب محمول</a>
-										<small><i class=""></i>3500 ريال</small>
+										<a href="#">محمد الفايز</a>
+										<small><i class="ti-location-pin"></i>أبها</small>
 									</span>
 									<span class="m-tog">
-										<a href="#">الأجهزة الإلكترونية</a>
+										<a href="#">0545891254</a>
+										<small class="mo-state">السعودية</small>
 									</span>
-									<span >15</span>
-									<span class="tog-btn tb0">
-										<small class="mo-state">متوفر</small>
+									<span >example@...</span>
+									<span class="tog-btn tb1">
+										<small class="mo-state">مفعل</small>
 									</span>
-									<div class="taqeem">
-										<span class="m-tog star rang">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-										</span>
-										<span class="m-tog star val">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											
-											<i class="fas fa-star-half"></i>
-										</span>
-									</div>
+									<span>15</span>
 									<div class="select "  ">
 										<div class="set set1">
 											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
 												<span class="btn2 " >إجراءات</span>
 												<div class="sub-m sub-m-2">
 													<ul>
-														<li><a class="pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp0-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp0-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp0-tc3" href="#"><i class="ti-slice"></i>تطبيق ضريبة محددة</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل بيانات العميل</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="fas fa-phone"></i>تواصل مع العميل</a></li>
 													</ul>
 												</div>
 											</div>
@@ -993,48 +956,28 @@
 								<div class="img">
 									<input type="checkbox" value="1" id="" name="check" >
 								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
 								<div class="infor">
 									<span>
-										<a href="#">حاسوب محمول</a>
-										<small><i class=""></i>3500 ريال</small>
+										<a href="#">محمد الفايز</a>
+										<small><i class="ti-location-pin"></i>أبها</small>
 									</span>
 									<span class="m-tog">
-										<a href="#">الأجهزة الإلكترونية</a>
+										<a href="#">0545891254</a>
+										<small class="mo-state">السعودية</small>
 									</span>
-									<span >15</span>
-									<span class="tog-btn tb0">
-										<small class="mo-state">متوفر</small>
+									<span >example@...</span>
+									<span class="tog-btn tb1">
+										<small class="mo-state">مفعل</small>
 									</span>
-									<div class="taqeem">
-										<span class="m-tog star rang">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-										</span>
-										<span class="m-tog star val">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											
-											<i class="fas fa-star-half"></i>
-										</span>
-									</div>
+									<span>15</span>
 									<div class="select "  ">
 										<div class="set set1">
 											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
 												<span class="btn2 " >إجراءات</span>
 												<div class="sub-m sub-m-2">
 													<ul>
-														<li><a class="pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp0-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp0-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp0-tc3" href="#"><i class="ti-slice"></i>تطبيق ضريبة محددة</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل بيانات العميل</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="fas fa-phone"></i>تواصل مع العميل</a></li>
 													</ul>
 												</div>
 											</div>
@@ -1046,48 +989,28 @@
 								<div class="img">
 									<input type="checkbox" value="1" id="" name="check" >
 								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
 								<div class="infor">
 									<span>
-										<a href="#">حاسوب محمول</a>
-										<small><i class=""></i>3500 ريال</small>
+										<a href="#">محمد الفايز</a>
+										<small><i class="ti-location-pin"></i>أبها</small>
 									</span>
 									<span class="m-tog">
-										<a href="#">الأجهزة الإلكترونية</a>
+										<a href="#">0545891254</a>
+										<small class="mo-state">السعودية</small>
 									</span>
-									<span >15</span>
-									<span class="tog-btn tb0">
-										<small class="mo-state">متوفر</small>
+									<span >example@...</span>
+									<span class="tog-btn tb1">
+										<small class="mo-state">مفعل</small>
 									</span>
-									<div class="taqeem">
-										<span class="m-tog star rang">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-										</span>
-										<span class="m-tog star val">
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											
-											<i class="fas fa-star-half"></i>
-										</span>
-									</div>
+									<span>15</span>
 									<div class="select "  ">
 										<div class="set set1">
 											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
 												<span class="btn2 " >إجراءات</span>
 												<div class="sub-m sub-m-2">
 													<ul>
-														<li><a class="pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp0-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp0-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp0-tc3" href="#"><i class="ti-slice"></i>تطبيق ضريبة محددة</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل بيانات العميل</a></li>
+														<li><a class="c-pp0-tc0" href="#"><i class="fas fa-phone"></i>تواصل مع العميل</a></li>
 													</ul>
 												</div>
 											</div>
@@ -1098,425 +1021,260 @@
 							<div class="sec2-move mt-2"><span class="btn2"><i class="ti-angle-double-down"></i> المزيد</span></div>
 						</div>
 					</div>
-					<div class="sec2 part pp1">
+					<div class="sec2 c-pp1">
 						<div class="container">
-							<div class="t-sec2 sec2-move">
-								<h5 class="">الأقسام</h5>
-								<div class="sear">
-									<i class="ti-search"></i>
-									<input type="search" placeholder="اسم القسم">
-									<!-- <input type="search" placeholder="وصف المنتج"> -->
-								</div>
-								<div>
-									<a class="btn1 pp" href="./part.html">إضافة قسم جديد <strong> +</strong></a>
-								</div>
-								<!-- <a style=" height: 26px; line-height: 16px;" class="btn1">إضافة منتجات جديد+</span> -->
-								<div class="set-sec2 khia">
-									<span class="btn2 "><small>استيراد من إكسل</small> استيراد <i class="ti-arrow-down"></i></span>
-									<span class="btn2 "><small>تصدير إلى إكسل</small> تصدير <i class="ti-arrow-up"></i></span>
-									<span  class="btn2 ">حذف <i class="ti-trash"></i></span>
-									<span  class="btn2 cer-tax">تطبيق ضريبة محددة</span>
-								</div>
+							<div class="t-sec2">
+								<h5 class="">التقييمات</h5>
 							</div>
-							<div class="talab head sec2-move">
-								<div class="img">
-									<input type="checkbox" value="1" id="ch01" name="check" >
-								</div>
-								<div class="img">
-									
-									<!-- <img src="https://picsum.photos/id/0/200/300" alt=""> -->
-								</div>
-								<div class="infor">
-									<span>اسم القسم</span>
-									<span class="">الحالة</span>
-									<span class="">عدد المنتجات</span>
-									<span class="">عدد المنتجات المتوفرة</span>
-									<span></span>
-								</div>
-							</div>					
-							<div class="talab sec2-move" style="position: relative;z-index: 5;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">أجهزة إلكترونية</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">10</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp1-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp1-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp1-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp1-tc3" href="#"><i class="ti-agenda"></i>إضافة فئة</a></li>
-													</ul>
-												</div>
-											</div>
+							<div class="row" style="direction: rtl;">
+								<div class="col-md-6">
+									<div class="input">
+										<span class="tog-btn tb1">
+											<small class="mo-state">مفعل</small>
+										</span>
+									</div>
+									<h6 class="pr-0 pb-3">المنتجات الأعلى تقييماً</h6>
+									<div class="talab head ">
+										<div class="infor">
+											<span>اسم المنتج</span>
+											<span>التقييم</span>
+											<span >عدد التقييمات</span>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="talab sec2-move" style="position: relative;z-index: 4;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">أجهزة إلكترونية</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">10</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp1-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp1-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp1-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp1-tc3" href="#"><i class="ti-agenda"></i>إضافة فئة</a></li>
-													</ul>
-												</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
 											</div>
+											<span>15</span>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="talab sec2-move" style="position: relative;z-index: 3;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">أجهزة إلكترونية</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">10</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp1-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp1-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp1-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp1-tc3" href="#"><i class="ti-agenda"></i>إضافة فئة</a></li>
-													</ul>
-												</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
 											</div>
+											<span>15</span>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="talab sec2-move" style="position: relative;z-index: 2;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">أجهزة إلكترونية</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">10</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp1-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp1-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp1-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp1-tc3" href="#"><i class="ti-agenda"></i>إضافة فئة</a></li>
-													</ul>
-												</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
 											</div>
+											<span>15</span>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="talab sec2-move" style="position: relative;z-index: 1;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">أجهزة إلكترونية</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">10</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp1-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp1-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp1-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-														<li><a class="pp1-tc3" href="#"><i class="ti-agenda"></i>إضافة فئة</a></li>
-													</ul>
-												</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
 											</div>
+											<span>15</span>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="sec2-move mt-2"><span class="btn2"><i class="ti-angle-double-down"></i> المزيد</span></div>
-						</div>
-					</div>
-					<div class="sec2 part pp2">
-						<div class="container">
-							<div class="t-sec2 sec2-move">
-								<h5 class="">العلامات التجارية</h5>
-								<div class="sear">
-									<i class="ti-search"></i>
-									<input type="search" placeholder="العلامة التجارية">
-									<!-- <input type="search" placeholder="وصف المنتج"> -->
-								</div>
-								<div>
-									<a id="3lama01"  class="btn1 pp" href="#">إضافة علامة تجارية <strong> +</strong></a>
-								</div>
-								<!-- <a style=" height: 26px; line-height: 16px;" class="btn1">إضافة منتجات جديد+</span> -->
-								<div class="set-sec2 khia">
-									<span class="btn2 "><small>استيراد من إكسل</small> استيراد <i class="ti-arrow-down"></i></span>
-									<span class="btn2 "><small>تصدير إلى إكسل</small> تصدير <i class="ti-arrow-up"></i></span>
-									<span  class="btn2 ">حذف <i class="ti-trash"></i></span>
-									<span  class="btn2 cer-tax">تطبيق ضريبة محددة</span>
-								</div>
-							</div>
-							<div class="talab head sec2-move">
-								<div class="img">
-									<input type="checkbox" value="1" id="ch01" name="check" >
-								</div>
-								<div class="img">
-									
-									<!-- <img src="https://picsum.photos/id/0/200/300" alt=""> -->
-								</div>
-								<div class="infor">
-									<span>اسم العلامة التجارية</span>
-									<span class="">الحالة</span>
-									<span class="">عدد المنتجات</span>
-									<span class="">عدد المنتجات المتوفرة</span>
-									<span></span>
-								</div>
-							</div>					
-							<div class="talab sec2-move" style="position: relative;z-index: 5;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">العلامة الأولى</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">15</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp2-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp2-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp2-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-													</ul>
-												</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
 											</div>
-										</div>
-										<!-- <select id=" " class="form-select form-select-lg tc0 " aria-label=".form-select-sm ">
-											<option selected value="0"> إجراءات </option>
-											<option value="1"> تعديل </option>
-											<option value="2"> تقارير </option>
-											<option value="3">اضافة خصم</option>
-										</select> -->
-									</div>
-								</div>
-							</div>
-							<div class="talab sec2-move" style="position: relative;z-index: 4;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">العلامة الأولى</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">15</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp2-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp2-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp2-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<!-- <select id=" " class="form-select form-select-lg tc0 " aria-label=".form-select-sm ">
-											<option selected value="0"> إجراءات </option>
-											<option value="1"> تعديل </option>
-											<option value="2"> تقارير </option>
-											<option value="3">اضافة خصم</option>
-										</select> -->
-									</div>
-								</div>
-							</div>
-							<div class="talab sec2-move" style="position: relative;z-index: 3;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">العلامة الأولى</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">15</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp2-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp2-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp2-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-													</ul>
-												</div>
-											</div>
-										</div>
-										<!-- <select id=" " class="form-select form-select-lg tc0 " aria-label=".form-select-sm ">
-											<option selected value="0"> إجراءات </option>
-											<option value="1"> تعديل </option>
-											<option value="2"> تقارير </option>
-											<option value="3">اضافة خصم</option>
-										</select> -->
-									</div>
-								</div>
-							</div>
-							<div class="talab sec2-move" style="position: relative;z-index: 2;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">العلامة الأولى</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">15</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp2-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp2-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp2-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-													</ul>
-												</div>
-											</div>
+											<span>15</span>
 										</div>
 									</div>
+									<div class=" mt-2"><span class="btn2"><i class="ti-angle-double-down"></i> المزيد</span></div>
 								</div>
-							</div>
-							<div class="talab sec2-move" style="position: relative;z-index: 1;">
-								<div class="img">
-									<input type="checkbox" value="1" id="" name="check" >
-								</div>
-								<div class="img">
-									<img src="https://picsum.photos/id/0/200/300" alt="">
-								</div>
-								<div class="infor">
-									<span>
-										<a href="#">العلامة الأولى</a>
-									</span>
-									<span class="tog-btn tb1">
-										<small class="mo-state">مفعل</small>
-									</span>
-									<span class="">25</span>
-									<span class="">15</span>
-									<div class="select ">
-										<div class="set set1">
-											<div class="b-d-1 b-d" style="position: absolute;left: 0;">
-												<span class="btn2 " >إجراءات</span>
-												<div class="sub-m sub-m-2">
-													<ul>
-														<li><a class="pp2-tc0" href="#"><i class="ti-pencil-alt"></i>تعديل</a></li>
-														<li><a class="pp2-tc1" href="#"><i class="ti-receipt"></i>تقارير</a></li>
-														<li><a class="pp2-tc2" href="#"><i class="ti-tag"></i>خصم</a></li>
-													</ul>
-												</div>
-											</div>
+								<div class="col-md-6">
+									<div class="input">
+										<span class="tog-btn tb1">
+											<small class="mo-state">مفعل</small>
+										</span>
+									</div>
+									<h6 class="pr-0 pb-3">المنتجات الأقل تقييماً</h6>
+									<div class="talab head ">
+										<div class="infor">
+											<span>اسم المنتج</span>
+											<span>التقييم</span>
+											<span >عدد التقييمات</span>
 										</div>
 									</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
+											</div>
+											<span>15</span>
+										</div>
+									</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
+											</div>
+											<span>15</span>
+										</div>
+									</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
+											</div>
+											<span>15</span>
+										</div>
+									</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
+											</div>
+											<span>15</span>
+										</div>
+									</div>
+									<div class="talab">
+										<div class="infor">
+											<span>جوال</span>
+											<div class="taqeem">
+												<span class="m-tog star rang">
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+													<i class="fas fa-star"></i>
+												</span>
+												<span class="m-tog star val">
+													<i class="fas fa-star"></i>
+													
+													<i class="fas fa-star-half"></i>
+												</span>
+											</div>
+											<span>15</span>
+										</div>
+									</div>
+									<div class=" mt-2"><span class="btn2"><i class="ti-angle-double-down"></i> المزيد</span></div>
 								</div>
 							</div>
-							<div class="sec2-move mt-2"><span class="btn2"><i class="ti-angle-double-down"></i> المزيد</span></div>
 						</div>
 					</div>
 				</div>

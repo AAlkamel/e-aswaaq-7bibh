@@ -29,16 +29,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
 		<!-- REVOLUTION SLIDER CSS ============================================= -->
+		<link href="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/js/froala_editor.pkgd.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 		<link rel="stylesheet" href="./css/owl.carousel.min.css">
         <link rel="stylesheet" href="./css/owl.theme.default.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./css/themify-icons.css">
 		<link rel="stylesheet" type="text/css" href="./fonts/flaticon.css">
-        <link rel="stylesheet" type="text/css" href="./css/my2.css">	
+		<link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/my.css">	
     </head>
-	<body class="manage req"> 
-        <!-- change name of class habiba............. -->
+	<body class="manage pro p-new">
 		<div class="loader-wrapper">
 			<img class="loader" src="./images/logo.gif" alt="">
 			<span class="loader"><span class="loader-inner"></span></span>
@@ -49,13 +51,6 @@
 				<span>
 					لا توجد نتائج
 				</span>
-			</div>
-		</div>
-		<div class="s101">
-			<div class="conta">
-				<i class="ti-close"></i>
-				<h6>تغيير حالة الطلب</h6>
-				
 			</div>
 		</div>
 		<div class="manage-menu m-m-s collaps ">
@@ -185,119 +180,134 @@
 		</header>
 
 		<main class="iner">
-           
-            <div class="sec1">
-				<div class="container">
-					<div class="top">
-						<div class="row">
-							<div class="col-sm-12 d-flex justify-content-center">
-								<h1 class="visit-header">تفاصيل الزيارات</h1>
-							</div>
+			<form action="">
+				<div class="sec14">
+					<div class="container back-p">
+						<div class="part-head">
+							<h5 class="text-right mt-1 mb-4" style="color: #444;">إضافة قسم</h5>
+							<span id="part-back" style="line-height: 22px;height: 30px;" class="btn1 ti-arrow-left"></span>
 						</div>
-
 						
-					</div>
-					
-					<div class="select sec1-move w-50">
-						<span><i class="fas fa-sort-amount-up"></i> </span> <span>فلتر الإحصائات</span>
-						<span >من </span>
-						<input type="date">
-						<span>إلى </span>
-						<input type="date">
-					</div>
-					<div class="row">
-		
-                        <div class="col-lg-6 col-xl-6 px-5 py-2 ">
-                            <div class="col-lg-12 col-xl-12 sec1-move">
-                                <div class="card ">
-                                    <h5>إجمالى الزيارات</h5>
-                                
-                                    <div class="sta">
-                                        <span class="shop"><i class="fas fa-chart-line" style='font-size:24px'></i></span>
-                                        <strong>12000</strong>
-                                        
-                                    </div>
-                                    <div class="view">
-                                        <a class="btn2 " href="#">تفاصيل </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-xl-12 sec1-move">
-                                <div class="card ">
-                                    <h5>عدد الزيارات الفعاله (الزائر إشترى)</h5>
-                                
-                                    <div class="sta">
-                                        <span> <i class='far fa-handshake' style='font-size:24px'></i></span>
-                                        <strong>3000</strong>
-                                        
-                                    </div>
-                                    <div class="view">
-                                        <a class="btn2 " href="#">تفاصيل </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-xl-12 sec1-move">
-                                <div class="card ">
-                                    <h5> عدد الزيارات غير الفعاله (الزائر لم يشترى) </h5>
-                                
-                                    <div class="sta">
-                                        <span ><i class='fas fa-level-down-alt' style='font-size:24px'></i></span>
-                                        <strong>8000</strong>
-                                        
-                                    </div>
-                                    <div class="view">
-                                        <a class="btn2 " href="#">تفاصيل </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-xl-6 px-5 py-2  sec1-move">
-							<div class="card social ">
-                                <div class="d-flex justify-content-between">
-
-                                    <h5>عدد الزيارات عبر</h5>
-                                    <div class="set sec1-white w-50">
-                                        <div class="b-d btn1">
-                                            <span class=" m-0" > <i class="ti-search"></i> إبحث عبر  </span>
-                                            <div class="sub-m">
-                                                <ul>
-                                                    <li><a href="#">قوقل</a></li>
-                                                    <li><a href="#">البريد الالكترونى</a></li>
-                                                    <li><a href="#">الواتس</a></li>
-                                                    <li><a href="#">إنستقرام</a></li>
-                                                    <li><a href="#">فيسبوك</a></li>
-                                                    <li><a href="#">تويتر</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>     
-                                    </div>
-                                </div>
-								<div class="sta mt-5 d-flex justify-content-center">
-									<span ></span>
-									<strong>3000</strong>
+						<div class="row dir">
+							<div class="col-lg-6">
+								<a id="cphotoinput01"  href="">
+									<span class="q-info">
+										<i class="far fa-question-circle"></i>
+										<small>
+											بحد أقصى عشر صور
+										</small>
+									</span>
+									أضف صورة
+								</a>
+								<input class="images"  type="file" name="images[]" id="images01" multiple>
+								
+								<div class="nor images-to-upload" id="images-to-upload01">
+									<div class="upload">
+										<i class="fas fa-images"></i>
+										<span>تصفح أو اسحب الصورة هنا</span>
+									</div>
+								</div><!-- end #images-to-upload01 -->
+							</div>
+							<div class="col-lg-6">
+								<div class="tras">
+									<span class="btn1 ar">عـ</span>
+									<span class="btn2 en">en</span>
+								</div>
+								<div class="ar-div">
+									<div class="mo-input">
+										<label for="">اسم القسم</label>
+										<input class="w-100" type="text">
+									</div>
+									<div class="mo-input">
+										<label for="">وصف القسم</label>
+										<!-- <div id="noed"></div> -->
+										<div id="editor4">
+											<p>Hello World!</p>
+											<p>Some initial <strong>bold</strong> text</p>
+											<p><br></p>
+										</div>
+									</div>
+								</div>
+								<div class="en-div">
+									<div class="mo-input">
+										<label for="">اسم القسم</label>
+										<input class="w-100" type="text">
+									</div>
+									<div class="mo-input">
+										<label for="">وصف القسم</label>
+										<!-- <div id="noed"></div> -->
+										<div id="editor5">
+											<p>Hello World!</p>
+											<p>Some initial <strong>bold</strong> text</p>
+											<p><br></p>
+										</div>
+									</div>
 								</div>
 							</div>
-        
-                            <div>
-                                <form class="form ">
-                                    <label for="" class="ml-5">أدخل الرابط لقياس عدد الزيارات عبر حملتك الإعلانيه</label>
-                                    <input class="form-control mr-sm-2" type="search" placeholder="أدخل الرابط هنا" aria-label="Search">
-                                  <div class="d-flex justify-content-center  mt-3">
-                                      <button class=" search-b btn  my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-                                    </div>
-                                  </form>
-                            </div>
+							<div class="col-lg-6 text-right">
+								<div class="text-right mt-3">
+									<label style="font-size: 16px;" for="">
+										
+										<span class="q-info">
+											<i class="far fa-question-circle"></i>
+											<small>
+												يمكن من خلالها تحسين وزيادة فرص ظهور منتجاتك بشكل ملموس في نتائج محركات البحث
+											</small>
+										</span>
+										تحسين محركات البحث SEO
+									</label>
+									<div class="input">
+										<span class="tog-btn tb1">
+											<small class="mo-state">مفعل</small>
+										</span>
+									</div>
+								</div>
+								<label for="">
+									
+									<span class="q-info">
+										<i class="far fa-question-circle"></i>
+										<small>
+											أضف المصطلحات والعبارات الأكثر رواجا في محركات البحث عن منتجات مشابهه لمنتجك - و يفضل عدم التكرار ووضع فاصله بين العبارات اوالمصطلحات 
+										</small>
+									</span>
+									أدخل كلمات دلالية للقسم
+								</label>
+								<div class="input mp-2 ">
+									<input class="w-100 " type="text" placeholder="">
+								</div>
+								<label for="">
+									
+									<span class="q-info">
+										<i class="far fa-question-circle"></i>
+										<small>
+											اختر عنوان رائج بحيث يكون مختصر و يعبر بمصداقية و بفاعلية عن محتوى صفحة المنتج
+										</small>
+									</span>
+									عنوان صفحة القسم
+								</label>
+								<div class="input mp-2 ">
+									<input class="w-100 " type="text" placeholder="">
+								</div>
+							</div>
+							<div class="col-lg-6 s111 s-no">
+								<div style="margin-top: 38px;" class="fil">
+									<span class="s10">صورة البانر في صفحة القسم</span>
+									<div class="s111-img">
+										<img id="i-p-01" src="./images/img05.jpg" alt="">
+									</div>
+									<span class="plus">+</span>
+									<input id="i-in-01" type="file"  >
+								</div>
+							</div>
+
 						</div>
-		                
-
-
+						
+						<div class="mt-3">
+							<span style="font-size: 14px;padding: 7px 21px;" class="btn1">حفظ</span>
+						</div>
 					</div>
 				</div>
-			</div>
-			
+			</form>
 		</main>
 		<footer>
 			<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
@@ -306,10 +316,109 @@
 			<script src="./js/jquery.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" ></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" ></script>
-			
+			<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 			<script src="./js/owl.carousel.min.js"></script>
 			<script src="./js/my.js"></script>
-			
+			<script>
+
+								//---------------------تحميل صور المنتجات------------------------
+					$('#cphotoinput01').on('click',function(e){
+						e.preventDefault();
+						$('#images01').click();
+					});
+
+					$('#images-to-upload01').on('click','.upload',function(){
+						
+						$('#images01').click();
+					});
+
+					//-----------
+					var fileCollection01 = [];
+					var files01;
+
+					$('#images01').on('change',function(e){
+						files01 = e.target.files;
+						//console.log(files01);
+						// fileCollection01 = [];
+						buld01(fileCollection01 ,files01);
+					});
+
+					$('body').on('click','.img i',function(){
+						var index0= $(this).parent().data('index');
+						console.log(index0);
+						fileCollection01.splice(index0,1);
+						console.log(fileCollection01);
+						buld001();
+					});
+
+					//---------------------------------------------
+					function buld01(rock,fils10){
+
+						$('#images-to-upload01').html('<div class="upload"><i class="fas fa-images"></i><span>تصفح أو اسحب الصورة هنا</span></div>');
+						$.each(fils10, function(i, file){
+							rock.push(file);
+							console.log(rock);
+						});
+
+						$.each(rock, function(j, fi){
+							var reader = new FileReader();
+							reader.readAsDataURL(fi);
+							reader.onload = function(e){
+								var template = '<div class="img" data-index="'+ j +'"><img src="'+e.target.result+'"><i>x</i></div> ';
+								$('#images-to-upload01').append(template);
+							};
+						});
+
+					};
+
+					function buld001(){
+
+						$('#images-to-upload01').html('<div class="upload"><i class="fas fa-images"></i><span>تصفح أو اسحب الصورة هنا</span></div>');
+
+						$.each(fileCollection01, function(j, fi){
+							var reader = new FileReader();
+							reader.readAsDataURL(fi);
+							reader.onload = function(e){
+								var template = '<div class="img" data-index="'+ j +'"><img src="'+e.target.result+'"><i>x</i></div> ';
+								$('#images-to-upload01').append(template);
+							};
+						});
+					};
+
+					$(window).on('dragenter', function(e){
+						e.preventDefault();
+					});
+					$('#images-to-upload01').bind('dragover', function(e){
+						e.preventDefault();
+						$(this).addClass('over');
+					});
+
+					$('#images-to-upload01').bind('dragleave', function(){
+						$(this).removeClass('over');
+					});
+					
+					var toUp01 =document.getElementById('images-to-upload01');
+					toUp01.addEventListener("drop", e=>{
+						e.preventDefault();
+						var drages01 = e.dataTransfer.files;
+						buld(fileCollection01,drages01)
+					});
+					// toUp.addEventListener('dragend', e =>{
+					// 	toUp.classList.remove('over')
+					// })
+				var quill = new Quill('#editor4', {
+					modules: {
+						toolbar: toolbarOptions
+					},
+					theme: 'snow'
+				});
+				var quill = new Quill('#editor5', {
+					modules: {
+						toolbar: toolbarOptions
+					},
+					theme: 'snow'
+				});
+			</script>
 		</footer>
 	</body>
 </html>

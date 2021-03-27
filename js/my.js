@@ -1,5 +1,28 @@
 // var platform=document.getElementById('platform');
 //     console.log(navigator.userAgent);
+var fonts = ['sofia', 'slabo', 'roboto', 'inconsolata', 'ubuntu'];
+				var toolbarOptions = [
+					[{ 'font': fonts }],
+					[{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+					['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+					//['blockquote', 'code-block'],
+					//[{ 'header': 1 }, { 'header': 2 }],               // custom button values
+					[{ 'align': [] }],
+					[{ 'color': [] }, { 'background': [] }],  
+					[{ 'list': 'ordered'}, { 'list': 'bullet' }],
+					//[{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+					//[{ 'indent': '-1'}, { 'indent': '+1' }],          // outdent/indent
+					[{ 'direction': 'rtl' }],                         // text direction
+					[ 'link', 'image', 'video'],
+					//[{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+					
+
+					        // dropdown with defaults from theme
+					//[{ 'font': [] }],
+					
+					
+					//['clean']                                         // remove formatting button
+					];
 
 
 $( document ).ready(function() {
@@ -272,6 +295,14 @@ $( document ).ready(function() {
         }
     });
     //---------------------------------------------
+    $('.tb2').on("click", function(){
+        if( $(this).hasClass("off")){
+            $(this).children('small').text("لا")
+        }else{
+            $(this).children('small').text("نعم")
+        }
+    });
+    //---------------------------------------------
     //--------------table edite products-----------
     $("#ta51").on("click",function(){
         $(".manage .table").show()
@@ -305,52 +336,205 @@ $( document ).ready(function() {
     });
     //---------------------------------------------
     //التبديل بين الأقسام والمنتجات
-    $('#pp').change(function () { 
+    $('#pp-top-0').on("click",function(){
+        $(".pp0").fadeIn();
         $(".pp1").hide();
+        $(".pp2").hide();
+
+        $(".filter-pp0").fadeIn();
+        $(".filter-pp1").hide();
+        $(".filter-pp2").hide();
+    })
+    $('#pp-top-1').on("click",function(){
         $(".pp0").hide();
-        if(this.value==1){
-            $(".pp1").show();
-        }else{
-            $(".pp0").show();
-        }
+        $(".pp1").fadeIn();
+        $(".pp2").hide();
+
+        $(".filter-pp0").hide();
+        $(".filter-pp1").fadeIn();
+        $(".filter-pp2").hide();
+    })
+    $('#pp-top-2').on("click",function(){
+        $(".pp0").hide();
+        $(".pp1").hide();
+        $(".pp2").fadeIn();
+
+        $(".filter-pp0").hide();
+        $(".filter-pp1").hide();
+        $(".filter-pp2").fadeIn();
+    })
+    //---------------------------------------------
+    //التبديل بين العملاؤ والتقييمات
+    $('#c-pp-top-0').on("click",function(){
+        $(".c-pp0").fadeIn();
+        $(".c-pp1").hide();
+
+        $(".c-filter-pp0").fadeIn();
+        $(".c-filter-pp1").hide();
+    })
+    $('#c-pp-top-1').on("click",function(){
+        $(".c-pp0").hide();
+        $(".c-pp1").fadeIn();
+
+        $(".c-filter-pp0").hide();
+        $(".c-filter-pp1").fadeIn();
+    })
+     //---------------------------------------------
+    // التاريخ في الفلتر
+    $('.d-date input[type="date"]').on('click',function(e){
+        e.stopPropagation();
+    });
+    //  فلتر  الأقسام والمنتجات والعلامات
+
+    $('#pp-filter').on('click',function(){
+        $(".hawy").animate({},);
+        $(".hawy").toggleClass('f-open');({
+        
+        });
     });
     //---------------------------------------------
     //إجراءات الأقسام والمنتجات
-    $('.tc').change(function () { 
-
-        if(this.value==1){
-            window.location.href = "./proNew.html";
-        }else if(this.value==2){
-            $('.taqapro').show();
-        }
-        $(this).val("0")
+    //1- المنتجات----------------
+    $('.pp0-tc0').on('click',function(e){
+        e.preventDefault();
+        window.location.href = "./proNew.html";
     });
-    $('.tc0').change(function () { 
-
-        if(this.value==1){
-            window.location.href = "./partNew.html";
-        }else if(this.value==2){
-            $('.taqapart').show();
-        }
-        $(this).val("0")
+    $('.pp0-tc1').on('click',function(e){
+        e.preventDefault();
+        $('.taqapro').show();
     });
+    $('.pp0-tc2').on('click',function(e){
+        e.preventDefault();
+        $('#s120').show();
+    });
+    $('.pp0-tc3').on('click',function(e){
+        e.preventDefault();
+        $('#s119').show();
+    });
+
+    //2- الأقسام---------------- 
+    $('.pp1-tc0').on('click',function(e){
+        e.preventDefault();
+        window.location.href = "./part.html";
+    });
+    $('.pp1-tc1').on('click',function(e){
+        e.preventDefault();
+        $('.taqapart').show();
+    });
+    $('.pp1-tc2').on('click',function(e){
+        e.preventDefault();
+        $('#s115').show();
+    });
+    $('.pp1-tc3').on('click',function(e){
+        e.preventDefault();
+        $('#s117').show();
+    });
+
+    
+
+    //3- العلامات---------------- 
+    $('.pp2-tc0').on('click',function(e){
+        e.preventDefault();
+        $('#s118').show()
+    });
+    $('.pp2-tc1').on('click',function(e){
+        e.preventDefault();
+        $('.taqapart').show();
+        
+    });
+    $('.pp2-tc2').on('click',function(e){
+        e.preventDefault();
+        $('#s115').show();
+    });
+    
+    // $('.pp2 .tc0').change(function () { 
+
+    //     if(this.value==1){
+    //         $('#s118').show()
+    //     }else if(this.value==2){
+        
+    //     }else if(this.value==3){
+    //         $('#s115').show();
+    //     }else if(this.value==4){
+    //         // $('#s116').show();
+    //     }
+    //     $(this).val("0");
+    // });
+
+// تحميل صورة 
+        $("#i-in-01").on('change',function(e){
+            files = e.target.files[0];
+            console.log(files);
+            var reader = new FileReader();
+            reader.readAsDataURL(files);
+            reader.onload = function(e){
+                document.getElementById('i-p-01').src=e.target.result;
+            };
+        });
+        $("#i-in-02").on('change',function(e){
+            files = e.target.files[0];
+            console.log(files);
+            var reader = new FileReader();
+            reader.readAsDataURL(files);
+            reader.onload = function(e){
+                document.getElementById('i-p-02').src=e.target.result;
+            };
+        });
+        $("#i-in-03").on('change',function(e){
+            files = e.target.files[0];
+            console.log(files);
+            var reader = new FileReader();
+            reader.readAsDataURL(files);
+            reader.onload = function(e){
+                document.getElementById('i-p-03').src=e.target.result;
+            };
+        });
+        $("#i-in-04").on('change',function(e){
+            files = e.target.files[0];
+            console.log(files);
+            var reader = new FileReader();
+            reader.readAsDataURL(files);
+            reader.onload = function(e){
+                document.getElementById('i-p-04').src=e.target.result;
+            };
+        });
+        $("#i-in-05").on('change',function(e){
+            files = e.target.files[0];
+            console.log(files);
+            var reader = new FileReader();
+            reader.readAsDataURL(files);
+            reader.onload = function(e){
+                document.getElementById('i-p-05').src=e.target.result;
+            };
+        });
+
     //---------------------تحميل صور المنتجات------------------------
+    // $('i').on('click',function(e){
+    //     console.log('erdtfuyg')
+    //     e.stopPropagation();
+    // });
+
     $('#cphotoinput').on('click',function(e){
         e.preventDefault();
         $('#images').click();
     });
+
+    $('#images-to-upload').on('click','.upload',function(){
+        
+        $('#images').click();
+    });
+
     //-----------
     var fileCollection = [];
     var files;
 
     $('#images').on('change',function(e){
-
         files = e.target.files;
         //console.log(files);
         // fileCollection = [];
-        buld();
-
+        buld(fileCollection ,files);
     });
+
     $('body').on('click','.img i',function(){
         var index0= $(this).parent().data('index');
         console.log(index0);
@@ -358,39 +542,188 @@ $( document ).ready(function() {
         console.log(fileCollection);
         buld0();
     });
-    //---------------------------------------------
-    //---------------------------------------------
-    function buld(){
-        $('#images-to-upload').html(" ");
-        $.each(files, function(i, file){
 
-            fileCollection.push(file);
-            console.log(fileCollection);
+    //---------------------------------------------
+    function buld(rock,fils){
+
+        $('#images-to-upload').html('<div class="upload"><i class="fas fa-images"></i><span>تصفح أو اسحب الصورة هنا</span></div>');
+        $.each(fils, function(i, file){
+            rock.push(file);
+            console.log(rock);
         });
-        $.each(fileCollection, function(j, fi){
 
+        $.each(rock, function(j, fi){
             var reader = new FileReader();
             reader.readAsDataURL(fi);
             reader.onload = function(e){
-
                 var template = '<div class="img" data-index="'+ j +'"><img src="'+e.target.result+'"><i>x</i></div> ';
                 $('#images-to-upload').append(template);
             };
         });
-    }
+
+    };
+
     function buld0(){
-        $('#images-to-upload').html(" ");
-        $.each(fileCollection, function(j, fi){
 
+        $('#images-to-upload').html('<div class="upload"><i class="fas fa-images"></i><span>تصفح أو اسحب الصورة هنا</span></div>');
+
+        $.each(fileCollection, function(j, fi){
             var reader = new FileReader();
             reader.readAsDataURL(fi);
             reader.onload = function(e){
-
                 var template = '<div class="img" data-index="'+ j +'"><img src="'+e.target.result+'"><i>x</i></div> ';
                 $('#images-to-upload').append(template);
             };
         });
+    };
+
+    $(window).on('dragenter', function(e){
+        e.preventDefault();
+    });
+    $('#images-to-upload').bind('dragover', function(e){
+        e.preventDefault();
+        $(this).addClass('over');
+    });
+
+    $('#images-to-upload').bind('dragleave', function(){
+        $(this).removeClass('over');
+    });
+    
+    var toUp =document.getElementById('images-to-upload');
+    if(toUp){
+        toUp.addEventListener('drop', e =>{
+            e.preventDefault();
+            var drages = e.dataTransfer.files;
+            buld(fileCollection,drages)
+        });
+        toUp.addEventListener('dragend', e =>{
+            toUp.classList.remove('over')
+        });
     }
+    
+    
+    
+
+    $('.ar').on('click',function(){
+        console.log('dcghg')
+        $(this).removeClass('btn2').addClass('btn1');
+        $(this).siblings().removeClass('btn1').addClass('btn2');
+        $(this).parent().next().show();
+        $(this).parent().next().next().hide();
+    });
+
+    $('.en').on('click',function(){
+        $(this).removeClass('btn2').addClass('btn1');
+        $(this).siblings().removeClass('btn1').addClass('btn2');
+        $(this).parent().next().hide();
+        $(this).parent().next().next().show();
+    });
+
+    $('.select input[type=date]::before').on('click',function(){
+        $("input::-webkit-calendar-picker-indicator").click();
+    });
+//------------- فتح وإغلاق الإعدادات النتقدمة في إضافة منتج--------------
+    $('#btn-ad').on('click',function(e){
+        e.preventDefault();
+        $('#con-ad').fadeToggle();
+        $('.rotate').toggleClass("ti-angle-double-up");
+        $('.rotate').toggleClass("ti-angle-double-down");
+    });
+
+
+    //---------------------------------------------
+    //  اضافة فئة 
+    $('.plus').on('click',function(){
+        $(this).next().click()
+    });
+    $("#f2ah").on('click',function(e){
+        e.preventDefault();
+        $("#s111").show()
+    });
+    $("#f2ah-close").on('click',function(e){
+        e.preventDefault();
+        $("#s111").hide()
+    });
+    //---------------------------------------------
+    $("#f2ah01-close").on('click',function(e){
+        e.preventDefault();
+        $("#s117").hide()
+    });
+    //---------------------------------------------
+    //  اضافة علامة تجارية 
+    $("#3lama").on('click',function(e){
+        e.preventDefault();
+        $("#s112").show()
+    });
+    $("#3lama-close").on('click',function(e){
+        e.preventDefault();
+        $("#s112").hide()
+    });
+
+    //  اضافة  ضريبة 
+    $("#add-tax").on('click',function(e){
+        e.preventDefault();
+        $("#s113").show()
+    });
+    $("#tax-close").on('click',function(e){
+        e.preventDefault();
+        $("#s113").hide()
+    });
+    //  تطبيق  ضريبة  محددة
+    $(".cer-tax").on('click',function(e){
+        e.preventDefault();
+        $("#s114").show()
+    });
+    $("#cer-tax-close").on('click',function(e){
+        e.preventDefault();
+        $("#s114").hide()
+    });
+    $("#cer-tax-close01").on('click',function(e){
+        e.preventDefault();
+        $("#s119").hide()
+    });
+    //  اضافة خصم
+    $("#khasm-close").on('click',function(e){
+        e.preventDefault();
+        $("#s115").hide()
+    });
+    $("#khasm-close01").on('click',function(e){
+        e.preventDefault();
+        $("#s120").hide()
+    });
+    //  اضافة علامة 01
+    $("#3lama01").on('click',function(e){
+        e.preventDefault();
+        $("#s116").show()
+    });
+    $("#3lama01-close").on('click',function(e){
+        e.preventDefault();
+        $("#s116").hide()
+    });
+    //  اضافة علامة 02
+    $("#3lama02-close").on('click',function(e){
+        e.preventDefault();
+        $("#s118").hide()
+    });
+    //  الرجوع من إضافة قسم 02
+    $("#part-back").on('click',function(e){
+        e.preventDefault();
+        history.go(-1)
+    });
+    //اضافة تصنيف جديد
+    $("#add-tsnef").on('click',function(e){
+        e.preventDefault();
+        $("#s121").show()
+    });
+    $("#add-tsnef-close").on('click',function(e){
+        e.preventDefault();
+        $("#s121").hide()
+    });
+
+
+
+
+
 });
 
 $(window).on("load",function(){
@@ -407,9 +740,12 @@ let t1 = gsap.timeline({
         
     }
 });
-t1.from('.h3',{y:30, opacity:0, duration:0.8})
+
+    t1.from('.h3',{y:30, opacity:0, duration:0.8})
     .from('.box',{x:-340, opacity:0, stagger:0.1, duration:1})
     .from('.move',{y:30, opacity:0, duration:0.5})
+
+
 
 
 
@@ -419,9 +755,12 @@ let t2 = gsap.timeline({
         start: 'center bottom'
     }
 });
-t2.from('.grid-container',{x:20, y:30, opacity:0, stagger:0.1, duration:0.8})
+
+    t2.from('.grid-container',{x:20, y:30, opacity:0, stagger:0.1, duration:0.8})
     .from('.gridi',{x:-20, opacity:0, stagger:0.1, duration:1},'-=0.5')
     .from('.pr .but.mo',{y:20, opacity:0, duration:0.8},'-=2')
+
+
     
 let t3 = gsap.timeline({
     scrollTrigger:{
